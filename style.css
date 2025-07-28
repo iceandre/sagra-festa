@@ -48,7 +48,7 @@ body {
 .hero {
   background: url('img/volantino.jpg') center/cover no-repeat;
   text-align: center;
-  color: white;
+  color: #2e7d32;
   padding: 80px 20px;
 }
 
