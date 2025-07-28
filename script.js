@@ -19,12 +19,12 @@ document.addEventListener('DOMContentLoaded', () => {
     button.addEventListener('click', () => {
       const panel = button.nextElementSibling;
       
-      // Chiude eventuali altri pannelli aperti (opzionale)
+      // Chiude altri pannelli aperti
       document.querySelectorAll('.panel').forEach(p => {
         if (p !== panel) p.style.display = 'none';
       });
 
-      // Toggle visibilità evento
+      // Toggle pannello selezionato
       panel.style.display = (panel.style.display === 'block') ? 'none' : 'block';
     });
   });
