@@ -47,13 +47,13 @@ body {
 .hero {
   background: url('img/volantino.jpg') center/cover no-repeat;
   text-align: center;
-  color: #fdd835;
+  color: #e3b211;
   padding: 80px 20px;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
 .hero.small {
-  background: #b22222;
+  background: #1b5e20;
   color: white;
   padding: 50px 20px;
 }
@@ -89,7 +89,7 @@ body {
 footer {
   text-align: center;
   padding: 15px;
-  background: #b22222;
+  background: #1b5c04;
   color: white;
 }
 .comitato-container {
