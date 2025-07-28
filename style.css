@@ -1,0 +1,93 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #fff8f0;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  background: #b22222;
+  color: white;
+  padding: 10px;
+}
+
+.menu-toggle {
+  cursor: pointer;
+  font-size: 24px;
+  margin-right: 20px;
+}
+
+.nav-links {
+  list-style: none;
+  display: none;
+  flex-direction: column;
+  padding: 0;
+}
+
+.nav-links li {
+  padding: 10px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-links a.active {
+  font-weight: bold;
+}
+
+.nav-links.show {
+  display: flex;
+}
+
+/* Hero */
+.hero {
+  background: url('img/volantino.jpg') center/cover no-repeat;
+  text-align: center;
+  color: white;
+  padding: 80px 20px;
+}
+
+.hero.small {
+  background: #b22222;
+  color: white;
+  padding: 50px 20px;
+}
+
+/* Eventi e Box */
+.eventi, .menu-section, .storia-section, .comitato-section {
+  padding: 20px;
+  text-align: center;
+}
+
+.eventi-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.evento-box {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  width: 250px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.evento-box:hover {
+  transform: translateY(-5px);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #b22222;
+  color: white;
+}
