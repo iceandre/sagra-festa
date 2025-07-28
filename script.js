@@ -22,3 +22,26 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+// Menù interattivo
+document.addEventListener('DOMContentLoaded', () => {
+  const buttonsMenu = document.querySelectorAll('.menu-btn');
+  const dettagliMenu = document.getElementById('menu-dettagli');
+
+  buttonsMenu.forEach(button => {
+    button.addEventListener('click', () => {
+      const titolo = button.dataset.title;
+      const dettagli = button.dataset.details;
+      const img = button.dataset.img;
+
+      dettagliMenu.classList.remove('show');
+      setTimeout(() => {
+        dettagliMenu.innerHTML = `
+          <h3>${titolo}</h3>
+          <p>${dettagli}</p>
+          <img src="${img}" alt="${titolo}">
+        `;
+        dettagliMenu.classList.add('show');
+      }, 100);
+    });
+  });
+});

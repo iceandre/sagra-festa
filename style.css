@@ -185,3 +185,32 @@ footer {
   opacity: 1;
   transform: translateY(0);
 }
+.menu-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.menu-btn {
+  background-color: #2e7d32;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border: none;
+  font-size: 16px;
+  border-radius: 5px;
+  width: 150px;
+  transition: background 0.3s;
+}
+
+.menu-btn:hover {
+  background-color: #1b5e20;
+}
+
+.menu-dettagli img {
+  max-width: 300px;
+  margin-top: 10px;
+  border-radius: 10px;
+}

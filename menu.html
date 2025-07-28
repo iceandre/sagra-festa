@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sagra della Festa - Menù</title>
+  <title>Sagra di San Pellegrino - Menù</title>
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
@@ -24,39 +24,44 @@
 
   <main>
     <section class="menu-section">
-  <h2>Specialità della Sagra</h2>
-  
-  <div class="accordion">
-    <button class="accordion-btn">Antipasti</button>
-    <div class="panel">
-      <p>Salumi locali, bruschette e formaggi tipici.</p>
-    </div>
+      <h2>Specialità della Sagra</h2>
+      <div class="menu-container">
+        <button class="menu-btn" 
+          data-title="Antipasti" 
+          data-details="Salumi locali, bruschette e formaggi tipici." 
+          data-img="img/antipasti.jpg">Antipasti</button>
 
-    <button class="accordion-btn">Primi Piatti</button>
-    <div class="panel">
-      <p>Risotto alla zucca, lasagne e pasta fresca fatta in casa.</p>
-    </div>
+        <button class="menu-btn" 
+          data-title="Primi Piatti" 
+          data-details="Risotto alla zucca, lasagne e pasta fresca fatta in casa." 
+          data-img="img/primi.jpg">Primi Piatti</button>
 
-    <button class="accordion-btn">Secondi Piatti</button>
-    <div class="panel">
-      <p>Grigliata mista di carne, pollo allo spiedo e fritto misto.</p>
-    </div>
+        <button class="menu-btn" 
+          data-title="Secondi Piatti" 
+          data-details="Grigliata mista di carne, pollo allo spiedo e fritto misto." 
+          data-img="img/secondi.jpg">Secondi Piatti</button>
 
-    <button class="accordion-btn">Dolci</button>
-    <div class="panel">
-      <p>Torte artigianali, crostate e dolci tradizionali.</p>
-    </div>
+        <button class="menu-btn" 
+          data-title="Dolci" 
+          data-details="Torte artigianali, crostate e dolci tradizionali." 
+          data-img="img/dolci.jpg">Dolci</button>
 
-    <button class="accordion-btn">Bevande</button>
-    <div class="panel">
-      <p>Vini locali, birre artigianali e bevande analcoliche.</p>
-    </div>
-  </div>
-</section>
+        <button class="menu-btn" 
+          data-title="Bevande" 
+          data-details="Vini locali, birre artigianali e bevande analcoliche." 
+          data-img="img/bevande.jpg">Bevande</button>
+      </div>
+
+      <!-- Box centrale dettagli -->
+      <div id="menu-dettagli" class="evento-dettagli">
+        <h3>Seleziona una categoria</h3>
+        <p>I dettagli del menù appariranno qui.</p>
+      </div>
+    </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Sagra della Festa - Tutti i diritti riservati</p>
+    <p>&copy; 2025 Sagra di San Pellegrino - Tutti i diritti riservati</p>
   </footer>
 </body>
 </html>
