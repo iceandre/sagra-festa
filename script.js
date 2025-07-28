@@ -11,3 +11,21 @@ accordions.forEach(btn => {
     panel.style.display = (panel.style.display === "block") ? "none" : "block";
   });
 });
+// Accordion per eventi
+document.addEventListener('DOMContentLoaded', () => {
+  const buttons = document.querySelectorAll('.accordion-btn');
+  
+  buttons.forEach(button => {
+    button.addEventListener('click', () => {
+      const panel = button.nextElementSibling;
+      
+      // Chiude eventuali altri pannelli aperti (opzionale)
+      document.querySelectorAll('.panel').forEach(p => {
+        if (p !== panel) p.style.display = 'none';
+      });
+
+      // Toggle visibilità evento
+      panel.style.display = (panel.style.display === 'block') ? 'none' : 'block';
+    });
+  });
+});

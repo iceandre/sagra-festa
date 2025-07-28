@@ -142,3 +142,30 @@ footer {
 .evento-box {
   border: 2px solid #26c6da;
 }
+.accordion-btn {
+  background-color: #2e7d32;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 18px;
+  transition: background 0.3s;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+.accordion-btn:hover {
+  background-color: #1b5e20;
+}
+
+.panel {
+  display: none;
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-left: 3px solid #26c6da;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
