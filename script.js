@@ -4,25 +4,21 @@ function toggleMenu() {
 
 document.addEventListener('DOMContentLoaded', () => {
   const buttons = document.querySelectorAll('.accordion-btn');
+  const dettagliBox = document.getElementById('evento-dettagli');
 
   buttons.forEach(button => {
     button.addEventListener('click', () => {
-      const panel = button.nextElementSibling;
+      const titolo = button.dataset.event;
+      const dettagli = button.dataset.details;
 
-      // Chiude altri pannelli aperti
-      document.querySelectorAll('.panel').forEach(p => {
-        if (p !== panel) {
-          p.style.display = 'none';
-        }
-      });
-
-      // Toggle pannello selezionato
-      if (panel.style.display === 'block') {
-        panel.style.display = 'none';
-      } else {
-        panel.style.display = 'block';
-      }
+      dettagliBox.classList.remove('show'); // reset animazione
+      setTimeout(() => {
+        dettagliBox.innerHTML = `
+          <h3>${titolo}</h3>
+          <p>${dettagli.replace(/\|/g, '<br>')}</p>
+        `;
+        dettagliBox.classList.add('show');
+      }, 100);
     });
   });
 });
-console.log("Script caricato!");
